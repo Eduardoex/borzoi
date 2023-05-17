@@ -1,0 +1,37 @@
+<!-- fiz isso como uma piada para um amigo meu -->
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borzoi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class = borzoi>
+  <img src="assets/dog.png" alt="imagem de um borzoi">
+  </div>
+  <div class="text">
+  <H1>faça o cachorro latir</H1>
+  <div id="bark">
+  <a href="#" style="--clr:#2d2f73"><span>Latir</span></a>
+  </div>
+  
+</div>
+</body>
+<script>
+  const barkbutton = document.querySelector("#bark");
+    let barkaudio = new Audio("assets/dog_audio.mp3");
+
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    barkbutton.addEventListener('click', function () {
+      barkaudio.play();
+    });
+  });
+
+  
+    
+</script>
+</html>
